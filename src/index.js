@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './screens/home/App';
+import Ranking from './screens/ranking/Ranking';
+import { AsideBar } from './components/AsideBar';
+import { TopBar } from './components/TopBar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +13,35 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+/*import './index.css';
+//import { Inter } from 'next/font/google';
+//import { AsideBar } from './components/AsideBar.js';
+
+//const inter = Inter({ subsets: ['latin'] })
+
+export const metadata = {
+  title: 'GlassCore',
+  description: 'Academic System',
+}
+
+export default function RootLayout({ children }) {
+  return (
+    
+    <html lang="en">
+
+      {//<body className={inter.className}>
+      }
+      <body>
+        
+        {//<AsideBar/>
+        }
+        <p>Hello</p>
+        {children}
+      </body>
+      
+    </html>
+    
+  )
+}*/
